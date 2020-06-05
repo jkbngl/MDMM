@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {DropdownModule} from 'primeng/dropdown';
+import {TableModule} from 'primeng/table';
 import { FormsModule } from '@angular/forms';
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 
@@ -20,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';                  //api
     BrowserModule,
     AppRoutingModule,
     DropdownModule,
+    TableModule,
     FormsModule,
     BrowserAnimationsModule
   ],
