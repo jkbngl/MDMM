@@ -14,10 +14,15 @@ interface Book {
 export class TableComponent implements OnInit {
 
   books: Book[];
-
+  cols: any[];
   
 
   ngOnInit() {
+    this.cols = [
+      { field: 'name', header: 'Name' },
+      { field: 'author', header: 'Author' },
+    ];
+
     this.books = [
       {name: 'Book1', author: 'Author1'},
       {name: 'Book2', author: 'Author2'},
