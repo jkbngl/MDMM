@@ -1,13 +1,17 @@
-<p-table [columns]="cols" [value]="books" sortMode="multiple">
+<p-table [columns]="cols" [value]="books" sortMode="multiple" #dt [paginator]="true" [rows]="5">
     <ng-template pTemplate="caption">
-    Books List
+  Books List
     </ng-template>
     <ng-template pTemplate="header" let-columns>
         <tr>
             <th *ngFor="let col of columns" [pSortableColumn]="col.field">
                 {{col.header}}
                 <p-sortIcon [field]="col.field"></p-sortIcon>
-  
+            </th>
+        </tr>
+        <tr>
+            <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                <input pInputText type="text" (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
             </th>
         </tr>
     </ng-template>
