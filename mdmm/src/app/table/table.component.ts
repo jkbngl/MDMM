@@ -16,4 +16,17 @@ export class TableComponent implements OnInit {
       this.dataService.getData().then(books => this.books = books);
   }
 
+  onRowEditInit(book: Book) {
+    console.log('Row edit initialized');
+  }
+
+  onRowEditSave(book: Book) {
+    console.log('Row edit saved');
+  }
+
+  onRowEditCancel(book: Book, index: number) {
+    console.log('Row edit cancelled');
+  }
+
+
 }
