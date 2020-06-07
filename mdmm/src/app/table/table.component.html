@@ -1,4 +1,4 @@
-<p-table [value]="books" dataKey="name" editMode="row">
+<p-table [value]="books" dataKey="name" editMode="row" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,15,20]" totalRecords="totalRecords" pageLinks="3">
     <ng-template pTemplate="header">
         <tr>
             <th>Name</th>
