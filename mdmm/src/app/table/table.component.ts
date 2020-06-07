@@ -16,7 +16,6 @@ export class TableComponent implements OnInit {
   books: Book[];
   cols: any[];
   
-
   ngOnInit() {
     this.cols = [
       { field: 'name', header: 'Name' },

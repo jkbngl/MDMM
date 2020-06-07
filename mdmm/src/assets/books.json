@@ -1,0 +1,7 @@
+{
+    "data": [
+        {"name": "The Godfather", "author": "Mario Puzo"},
+        {"name": "The Fellowship of the Ring", "author": "J.R.R. Tolkien"},
+        {"name": "Harry Potter and the Deathly Hallows", "author": "J.K. Rowling  "}        
+    ]
+}
